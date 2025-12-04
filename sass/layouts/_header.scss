@@ -1,0 +1,22 @@
+@use "../colors/colors" as *;
+
+header {
+    background-color: $headerBackColor;
+     align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .logo{
+            align-items: center;
+            display: flex;
+            flex-direction: row; 
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            margin: 0 15px;
+        }
+
+}
