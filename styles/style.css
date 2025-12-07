@@ -46,22 +46,8 @@ header .cart {
   margin-right: 20px;
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 200px;
-  padding: 20px 40px;
-  z-index: 1000;
-}
-footer img {
-  height: 50px;
-  width: 50px;
-  display: block;
+body {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
+
+/*<--!this is a test for making the first pull request in the repository-->*/
