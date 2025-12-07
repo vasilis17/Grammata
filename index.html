@@ -1,57 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Grammatosira-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/style.min.css">
-        <style>
 
-            main {
-                background-color: #FFEDF3;
-                height: 500px;
-            }
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Grammatosira-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        main {
+            background-color: #FFEDF3;
+            height: 500px;
+        }
 
-            footer {
-                background-color: #0ABAB5;
-                height: 200px;
-            }
-        </style>
-        <meta charset="utf-8">
+        footer {
+            background-color: #0ABAB5;
+            height: 200px;
+        }
+    </style>
+    <meta charset="utf-8">
 
-        
-        <title>Γράμματα - Αρχική</title>
-    </head>
 
-    <body>
-        <header>
-            <div class="logo">
-                <div class="logo-pic">
-                  <a href="index.html">  <img src="images/logo.png" alt="Γράμματα Logo" width="100" height="65"> </a>
-                </div>
-                <div class="title">
-                   <a href="index.html"> <h1>Γράμματα</h1> </a>
-                </div>             
+    <title>Γράμματα - Αρχική</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-pic">
+                <a href="index.html"> <img src="images/logo.png" alt="Γράμματα Logo" width="100" height="65"> </a>
             </div>
-
-
-            <div class="search-bar">
-                <input type="text" placeholder="Αναζήτηση...">
-                <button type="submit">Αναζήτηση</button>
-                <button type="reset">Καθαρισμός</button>
+            <div class="title">
+                <a href="index.html">
+                    <h1>Γράμματα</h1>
+                </a>
             </div>
+        </div>
 
-            <div class="cart">
-                <img src="images/shopping-bag.png" alt="Καλάθι Αγορών" width="40" height="40">
-            </div>
-        </header>
 
-        <main>
+        <div class="search-bar">
+            <form method="GET" action="/sendData">
+                <input type="text" placeholder="Αναζήτηση... ">
+            </form>
+        </div>
 
-        </main>
+        <div class="cart">
+            <img src="images/shopping-bag.png" alt="Καλάθι Αγορών" width="40" height="40">
+        </div>
+    </header>
 
-        <footer>
+    <main>
 
-        </footer>
-    </body>
+    </main>
+
+    <footer>
+        <div class="social-responsibility">
+            <h2>Κοινωνική Ευθήνη</h2>
+        </div>  
+
+        <div class="policy">
+            <h2>Πολιτική Απορρήτου</h2>
+        </div>
+
+        <div class="social media">
+            <h2>Social Media</h2>
+            <img src="images/facebook.png" alt="facebook">
+            <img src="images/instagram.png" alt="instagram">
+            <img src="images/linkedin.png" alt="linked in">
+            <img src="images/twitter.png" alt="twitter">
+        </div>
+    </footer>
+</body>
+
 </html>

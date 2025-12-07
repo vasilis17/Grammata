@@ -5,4 +5,10 @@
 
 body {
     margin: 0;
+    overflow: auto;
+}
+
+// Reserve space for the fixed footer so content isn't covered
+body {
+    padding-bottom: 200px; // match footer height
 }
