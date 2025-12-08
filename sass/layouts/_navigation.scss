@@ -1,0 +1,32 @@
+@use "../colors/colors" as *;
+
+nav {
+    display: flex;
+    background-color: $footerBackColor;
+    height: 60px;
+    border-top: $hoverBackColor 2px solid;
+    justify-content: center;
+
+    ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        li {
+            margin: 0 20px;
+
+            a {
+                text-decoration: none;
+                color: $hoverBackColor;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 60px;
+                &:hover {
+                    color: $headerBackColor;
+                }
+            }
+        }
+    }
+}
