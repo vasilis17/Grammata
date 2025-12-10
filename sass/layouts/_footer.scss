@@ -5,12 +5,10 @@ footer {
     color: $hoverBackColor;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
     width: 100%;
     padding: 30px 40px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
     margin: 0px;
 
     img {
@@ -19,4 +17,33 @@ footer {
         display: block;
         margin: 12px;
     }
+
+    .container {
+        .title {
+            justify-self: center;
+
+            h2 {
+                display: inline-block;
+            }
+        }
+
+        .content {
+            justify-items: center;
+
+            p{
+                
+                display: block;
+            }
+
+        }
+
+        .social-media-icons {
+            justify-self: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
 }
