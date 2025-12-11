@@ -7,14 +7,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
 
-
-
-    .logo {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-    }
-
     a {
         text-decoration: none;
         color: black;
@@ -22,24 +14,97 @@ header {
     }
 
     .search-bar {
-        input {
+        display: flex;
+        align-items: center;
+
+        form {
+            display: flex;
+            align-items: center;
             width: 550px;
-            border-radius: 8px;
+            max-width: 650px;
+        }
+
+        input {
+            flex: 1 1 auto;
+            min-width: 0;
+            border-radius: 8px 0 0 8px;
             border: none;
             height: 40px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             transition: 100ms;
-            padding: 0 15px;
+            padding: 0 15px 0 40px; // leave room for icon
         }
 
-    }
-    .search-bar:hover input {
-        background-color: $hoverBackColor;
-        transform: translateY(-2px);
+        input:focus {
+            outline: none;
+        }
+
+        .search-button {
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            padding: 0 14px;
+            border-radius: 0 8px 8px 0;
+            background-color: rgb(235, 235, 235);
+            color: black;
+            cursor: pointer;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: 100ms;
+        }
+
+        &:hover input {
+            background-color:  rgb(235, 235, 235);
+            transform: translateY(-2px);
+        }
+
+        &:hover button{
+            cursor: pointer;
+            transform: translateY(-2px);
+        }
     }
 
     .cart {
-        margin-right: 20px;
+        display: flex;
+        width: 150px;
+        justify-content: center;
+        align-items: top;
+
+        .bag-button {
+            height: 150px;
+            width: 150px;
+            border:none;
+            background-color: inherit;
+            padding-bottom: 20px;
+
+            i{
+                font-size: 60px;
+                color: white;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        
     }
 
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header .search-bar input {
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    header .cart {
+        width: auto;
+        margin-top: 10px;
+    }
 }
